@@ -35,18 +35,11 @@ Cookies for retaining active state of accessibility services:
 
 - contrast
 
-Cookies for measuring use of services:
-
-- _ga
-- _gid
-- _gat
-
-By understanding how people use our website, we can improve the information provided. We gather this data using Google Analytics.
 
 ## External links
 This site may contain links to other sites.
 
-ONS is not responsible for the privacy practices or the content of such websites.
+UPO is not responsible for the privacy practices or the content of such websites.
 
 ## Security
 This website has security measures in place to protect the loss, misuse, and alteration of the information under our control.
