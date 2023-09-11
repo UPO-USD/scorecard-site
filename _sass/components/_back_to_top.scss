@@ -1,0 +1,21 @@
+.back-to-top {
+  background-color: #002569;
+  padding: 5px;
+  display: inline-flex;
+  color: white;
+  border-radius: 8.5px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  svg {
+   margin-right: 7px;
+  }
+}
+
+.back-to-top:hover {
+  background-color: #1c6d9c !important;
+}
+
+.app-c-back-to-top__icon{
+  display: none;
+}
