@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://upo-usd.github.io/scorecard-data/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/scorecard-site/assets/css/style.css?v=20230911052621">
+        <link rel="stylesheet" href="/scorecard-site/assets/css/style.css?v=20230911064657">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -176,47 +176,35 @@ layout-goal
     <h2 class="internet-explorer-message-title">Este navegador de Internet ya no es compatible</h2>
     <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.</p>
 </div>
-<div id="disclaimer">
+<!-- <div id="disclaimer">
     
-<div class="container">
-  <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
-    
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
-    
-  </div>
-</div>
-
-</div>
+</div> -->
 
 <header role="banner" class="">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/scorecard-site/es/" id="home" aria-label="Ir a la página de inicio" title="Ir a la página de inicio">
+    <a class="logo" href="/scorecard-site/es/" id="home" aria-label="Ir a la página de inicio" title="Ir a la página de inicio">
     <img src="/scorecard-site/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex flex-wrap w-100 justify-content-between">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/scorecard-site/es/">Inicio</a>
-</li><li class="nav-item ">
+    <div class="header-nav">
+        <div class="container">
+            <nav class="sticky navbar-expand-lg navbar-light flex-wrap align-items-start">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+                        aria-expanded="false" aria-label="Mostrar el menú de navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/scorecard-site/es/goals">Objetivos</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/scorecard-site/es/reporting-status">Estado de informes</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/scorecard-site/es/news">Actualizaciones</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/scorecard-site/es/faq">FAQ</a>
-</li><li class="nav-item ">
     <a class="nav-link" href="/scorecard-site/es/about">Acerca de</a>
 </li></ul>
     
-                </div>
-                <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/scorecard-site/es/search/">
+                    </div>
+                    <div class="search-bar">
+                        <form class="align-self-lg-end" id="search" action="/scorecard-site/es/search/">
     <div class="input-group">
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
@@ -228,8 +216,8 @@ layout-goal
     </div>
 </form>
 
-                </div>
-                <div class="header-toggles d-flex">
+                    </div>
+                    <div class="header-toggles d-flex align-items-center">
 
 
 
@@ -252,7 +240,7 @@ layout-goal
 
 
 
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+                        <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/scorecard-site/9/">
@@ -265,13 +253,23 @@ data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
 >A</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContentMovi">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/scorecard-site/es/goals">Objetivos</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/scorecard-site/es/reporting-status">Estado de informes</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/scorecard-site/es/about">Acerca de</a>
+</li></ul>
+    
+                </div>
+            </nav>
+        </div>
     </div>
 </header>
 <div id="top" tabindex=-1></div>
-
 
 
 <div class="container">
@@ -288,6 +286,24 @@ data-event-label="high"
         
     </ol>
 </nav>
+  
+    
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
+        <a class="btn btn-primary" href="/scorecard-site/es/8/" aria-labelledby="previous-link">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span id="previous-link" class="d-none d-md-inline">Objetivo anterior</span>
+        </a>
+    </div>
+    <div class="text-right">
+        <a class="btn btn-primary" href="/scorecard-site/es/10/" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Siguiente objetivo</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+
   
 </div>
 
@@ -319,354 +335,18 @@ data-event-label="high"
 
 
 
-  <div class="container g-0 ">
+  <div class="container g-0 goal-showing-progress">
     <div class="row align-items-end">
       <div class="col">
         <h2 class="goal-page-heading">Metas e indicadores</h2>
       </div>
       
+      <div class="col-lg-2 d-none d-lg-block progress-column-header">
+        <span aria-hidden="true">¿Cómo vamos con respecto al objetivo del 2030?</span>
+      </div>
+      
     </div>
     <hr class="goal-page-column-header-rule">
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.1</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad, incluidas infraestructuras regionales y transfronterizas, para apoyar el desarrollo económico y el bienestar humano, haciendo especial hincapié en el acceso asequible y equitativo para todos</span>
-          </div>
-          
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.1.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-1-1/">Proporción de la población rural que vive a menos de 2 km de una carretera transitable todo el año</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.1.2</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-1-2/">Volumen de transporte de pasajeros y carga, desglosado por medio de transporte</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.2</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Promover una industrialización inclusiva y sostenible y, de aquí a 2030, aumentar significativamente la contribución de la industria al empleo y al producto interno bruto, de acuerdo con las circunstancias nacionales, y duplicar esa contribución en los países menos adelantados</span>
-          </div>
-          
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.2.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-2-1/">Valor añadido del sector manufacturo en proporción al PIB y per cápita</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.2.2</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-2-2/">Empleo del sector manufacturero en proporción al empleo total</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.3</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Aumentar el acceso de las pequeñas industrias y otras empresas, particularmente en los países en desarrollo, a los servicios financieros, incluidos créditos asequibles, y su integración en las cadenas de valor y los mercados</span>
-          </div>
-          
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.3.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-3-1/">Proporción del valor añadido total del sector industrial correspondiente a las pequeñas industrias</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.3.2</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-3-2/">Proporción de las pequeñas industrias que han obtenido un préstamo o una línea de crédito</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.4</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">De aquí a 2030, modernizar la infraestructura y reconvertir las industrias para que sean sostenibles, utilizando los recursos con mayor eficacia y promoviendo la adopción de tecnologías y procesos industriales limpios y ambientalmente racionales, y logrando que todos los países tomen medidas de acuerdo con sus capacidades respectivas</span>
-          </div>
-          
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.4.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/scorecard-site/es/9-4-1/">Emisiones de CO2 por unidad de valor añadido</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
-        <span class="visually-hidden">Estado del indicador</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
     
       
       <div class="row align-items-start goal-target">
@@ -678,6 +358,8 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación y aumentando considerablemente, de aquí a 2030, el número de personas que trabajan en investigación y desarrollo por millón de habitantes y los gastos de los sectores público y privado en investigación y desarrollo</span>
           </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
           
       </div>
         
@@ -696,7 +378,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/scorecard-site/es/9-5-1/">Gastos en investigación y desarrollo en proporción al PIB</a></span>
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-1/">Número de empresas derivadas creadas en la UPO</a></span>
               
 
 
@@ -708,12 +390,34 @@ data-event-label="high"
 
 
 
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
+<span class="status complete">
+    <span class="status-inner">Informado</span>
 </span>
 
 
         </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
 
 
             </div>
@@ -736,7 +440,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/scorecard-site/es/9-5-2/">Número de investigadores (en equivalente a tiempo completo) por cada millón de habitantes</a></span>
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-2/">Porcentaje del presupuesto anual de la UPO dedicado a investigación y desarrollo (I+D)</a></span>
               
 
 
@@ -748,8 +452,8 @@ data-event-label="high"
 
 
 
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
+<span class="status complete">
+    <span class="status-inner">Informado</span>
 </span>
 
 
@@ -758,23 +462,30 @@ data-event-label="high"
 
             </div>
             
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
+
+
+            </div>
+            
             
           </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.a</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Facilitar el desarrollo de infraestructuras sostenibles y resilientes en los países en desarrollo mediante un mayor apoyo financiero, tecnológico y técnico a los países africanos, los países menos adelantados, los países en desarrollo sin litoral y los pequeños Estados insulares en desarrollo</span>
-          </div>
-          
-      </div>
         
 
           
@@ -786,12 +497,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.a.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.5.3</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/scorecard-site/es/9-a-1/">Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</a></span>
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-3/">Porcentaje de ingresos por I+D derivados de fondos externos respecto al presupuesto total de la universidad destinado a I+D</a></span>
               
 
 
@@ -803,8 +514,8 @@ data-event-label="high"
 
 
 
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
+<span class="status complete">
+    <span class="status-inner">Informado</span>
 </span>
 
 
@@ -813,23 +524,30 @@ data-event-label="high"
 
             </div>
             
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
+
+
+            </div>
+            
             
           </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.b</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Apoyar el desarrollo de tecnologías, la investigación y la innovación nacionales en los países en desarrollo, incluso garantizando un entorno normativo propicio a la diversificación industrial y la adición de valor a los productos básicos, entre otras cosas</span>
-          </div>
-          
-      </div>
         
 
           
@@ -841,12 +559,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.5.4</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/scorecard-site/es/9-b-1/">Proporción del valor añadido por la industria de tecnología mediana y alta en el valor añadido total</a></span>
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-4/">Porcentaje de ingresos por I+D derivados de fondos públicos respecto al presupuesto total de la universidad destinado a I+D</a></span>
               
 
 
@@ -858,8 +576,8 @@ data-event-label="high"
 
 
 
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
+<span class="status complete">
+    <span class="status-inner">Informado</span>
 </span>
 
 
@@ -868,23 +586,30 @@ data-event-label="high"
 
             </div>
             
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
+
+
+            </div>
+            
             
           </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Meta</span> 9.c</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet en los países menos adelantados de aquí a 2020</span>
-          </div>
-          
-      </div>
         
 
           
@@ -896,12 +621,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.c.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.5.5</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/scorecard-site/es/9-c-1/">Proporción de la población con cobertura de red móvil, desglosada por tecnología</a></span>
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-5/">Porcentaje de ingresos por I+D derivados de fondos privados respecto al presupuesto total de la universidad destinado a I+D</a></span>
               
 
 
@@ -913,12 +638,96 @@ data-event-label="high"
 
 
 
-<span class="status notstarted">
-    <span class="status-inner">Datos no disponibles</span>
+<span class="status complete">
+    <span class="status-inner">Informado</span>
 </span>
 
 
         </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicador</span> 9.5.6</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/scorecard-site/es/9-5-6/">Número de patentes o licencias de explotación vinculadas a la investigación realizada en la UPO</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etiquetas"><li class="list-inline-item">
+        <span class="visually-hidden">Estado del indicador</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Informado</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden">Estado del progreso</span>
+              
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                No hay datos
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/scorecard-site/assets/img/progress/not-available.png" alt="No hay datos" />
+            </div>
+        
+        </div>
+    
 
 
             </div>
@@ -929,15 +738,30 @@ data-event-label="high"
         <hr class="goal-page-target-rule" />
     
   </div>
-  <a href="#top">Volver arriba</a>
+  <a href="#top">
+    <span class="back-to-top">Volver arriba</span>
+</a>
 </div>
 
 
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div id="footerLinks">
+            <div class="col-md-9">
+                <div class="eu-logo">
+                    <img src="/scorecard-site/assets/img/eu_logo.png" alt="EU co-funded logo" class="uv-logo" />
+                </div>
+                <p id="disclaimer" class="footer-text">The cooperation project (2021-1-ES01-KA220-HED-000029950) has
+                    been
+                    funded
+                    with
+                    support from the European Commission. This website reflects the views only of the author, and the
+                    Commission
+                    cannot be held responsible for any use which may be made of the information contained therein.</p>
+
+            </div>
+            <div class="col-md-3">
+                <div id="footer-links">
                     <ul>
                         <li>
                             <a href="https://open-sdg.org">Construido usando Open SDG</a>
@@ -948,33 +772,19 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
                             <a href="/scorecard-site/es/about/cookies-and-privacy/">Galletas</a>
                             
                         </li>
                         
                         
-                        
-                        <li>
-                            <a href="/scorecard-site/es/config">Configuration</a>
-                        </li>
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </div>
-        
     </div>
-</footer>
+    
 
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -1001,16 +811,17 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/scorecard-site/assets/js/sdg.js?v=20230911052621'></script>
+<script src='/scorecard-site/assets/js/sdg.js?v=20230911064657'></script>
 
 
     
     
-    <script src="/scorecard-site/assets/js/custom.js?v=20230911052621"></script><script>
+    <script src="/scorecard-site/assets/js/custom.js?v=20230911064657"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
 
 
 </body>
+
 </html>
