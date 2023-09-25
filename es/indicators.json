@@ -71,7 +71,7 @@
         },
         {
           "id": "3-4-3",
-          "title": "Alumnos atendidos en el servicio de salud mental",
+          "title": "Estudiantes atendidos en el servicio de salud mental",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/3-4-3/",
@@ -135,7 +135,7 @@
         },
         {
           "id": "4-3-7",
-          "title": "Índice de saturación docente (porcentaje de créditos asignados a un profesor respecto al total posible)",
+          "title": "Proporción de estudiantes de primera generación (primera generación de estudios universitario en la familia)",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/4-3-7/",
@@ -239,7 +239,7 @@
         },
         {
           "id": "5-1-4",
-          "title": "Porcentaje de mujeres PDI sobre el total de PDI de la UPO",
+          "title": "Porcentaje de mujeres PDI (Personal Docente e Investigador) sobre el total de PDI de la UPO",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-1-4/",
@@ -247,7 +247,7 @@
         },
         {
           "id": "5-1-5",
-          "title": "Porcentaje de mujeres PAS sobre el total de PAS de la UPO",
+          "title": "Porcentaje de mujeres PAS (Personal de Administración y Servicios) sobre el total de PAS de la UPO",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-1-5/",
@@ -255,7 +255,7 @@
         },
         {
           "id": "5-1-6",
-          "title": "Porcentaje del presupuesto anual de la UPO asignado al área de Igualdad",
+          "title": "Porcentaje del presupuesto anual de la UPO asignado al Área de Igualdad de Género",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-1-6/",
@@ -279,7 +279,7 @@
         },
         {
           "id": "5-4-1",
-          "title": "Número de personas (PDI+PAS) que acogen planes de conciliación",
+          "title": "Número de personas (PDI+PAS) que se acogen a los planes de conciliación (incluyendo excedencia por cuidados)",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-4-1/",
@@ -287,7 +287,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Porcentaje de mujeres miembros de órganos colegiados y equipos directivos de respecto al total de miembros",
+          "title": "Porcentaje de mujeres miembros de órganos colegiados y equipos directivos respecto al total de miembros",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-5-1/",
@@ -295,7 +295,7 @@
         },
         {
           "id": "5-5-2",
-          "title": "Proporción de mujeres y niñas a partir de 15 años de edad que han sufrido violencia sexual a manos de personas que no eran su pareja en los últimos12 meses, desglosada por edad y lugar del hecho",
+          "title": "Porcentaje de grupos principales de investigación dirigidos por mujeres",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-5-2/",
@@ -303,7 +303,7 @@
         },
         {
           "id": "5-5-3",
-          "title": "Porcentaje de mujeres profesoras respecto al número total de puestos",
+          "title": "Porcentaje de mujeres catedráticas respecto al total de cátedras",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/5-5-3/",
@@ -407,7 +407,7 @@
         },
         {
           "id": "8-5-4",
-          "title": "Porcentaje de personal de la UPO con contrato laboral indefinido o funcionarios",
+          "title": "Porcentaje de personal de la UPO con contrato laboral indefinido o funcionariado",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/8-5-4/",
@@ -511,7 +511,7 @@
         },
         {
           "id": "10-2-3",
-          "title": "Porcentaje de alumnos con diversidad funcional respecto al total de alumnos",
+          "title": "Porcentaje de instalaciones y servicios certificados como accesibilidad universal",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/10-2-3/",
@@ -567,7 +567,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "Porcentaje de ocupación de la residencia Flora Tristán",
+          "title": "Tasa de ocupación anual de la residencia Flora Tristán",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/11-3-1/",
@@ -711,7 +711,7 @@
         },
         {
           "id": "14-2-2",
-          "title": "Academic/training offer in aquatic ecosystems from a perspective of conservation and sustainable use of their resources",
+          "title": "Oferta académica/formativa en ecosistemas acuáticos desde una perspectiva de conservación y aprovechamiento sostenible de sus recursos",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/14-2-2/",
@@ -727,7 +727,7 @@
         
         {
           "id": "15-5-1",
-          "title": "Índice de biodiversidad en el campus (existentes y reintroducidas)",
+          "title": "Índice de biodiversidad en el campus (existente y reintroducida)",
           "description": "",
           "keywords": "",
           "href": "/scorecard-site/es/15-5-1/",
