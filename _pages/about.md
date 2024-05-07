@@ -7,6 +7,8 @@ layout: page
 
 ## [<span style="color: #002569">UPO Diagnosis</span>](https://www.upo.es/usd-project/wp-content/uploads/2023/06/UPO_diagnosis.pdf)
 
+## [<span style="color: #002569">UPO Action Plan</span>](/assets/docs/ActionPlanUPO2030.pdf)
+
 ## Table of contents
 
 ## About this site
