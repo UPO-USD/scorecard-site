@@ -9,9 +9,9 @@ language: es
 
 ## [<span style="color: #002569">UPO Action Plan</span>](https://upo-usd.github.io/scorecard-site/assets/docs/ActionPlanUPO2030.pdf)
 
-## Table of contents
+## Tabla de contenido
 
-## About this site
+## Sobre este sitio
 
 En septiembre de 2015, la Asamblea General de la ONU adoptó la Agenda 2030 para el
 Desarrollo Sostenible, un plan de acción a favor de las personas, el planeta y la prosperidad,
@@ -46,6 +46,6 @@ son:
 - Promoción de acuerdos, convenios y contratos específicos en materia medioambiental
   con otras instituciones, organismos o empresas públicas o privadas.
 
-## Need more info?
+## ¿Necesitas más info?
 
 ## Feedback
